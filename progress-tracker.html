@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Tracker</title>
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        .tool-div {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .tool-div h1 {
+            margin-bottom: 15px;
+        }
+        .tool-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .tool-card {
+            background-color: #1f1f1f;
+            padding: 25px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .tool-card h3 {
+            margin-bottom: 10px;
+        }
+        .tool-card p {
+            margin-bottom: 15px;
+        }
+        .tool-card progress {
+            width: 60%;
+            height: 20px;
+            margin-bottom: 10px;
+        }
+        .cta {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background-color: #4caf50;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+        .cta:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <nav id="Top">
+        <table>
+            <tr>
+                <td><img src="images/logo.png" alt="logo" width="40" height="40"></td>
+                <td>
+                    <a href="home.html">Home</a>
+                    <a href="learning-hub.html">Learning Hub</a>
+                    <a href="Growth-Tools.html">Self-Assessment & Growth Tools</a>
+                    <a href="success-stories.html">Success Stories</a>
+                    <a href="workshops.html">Workshops & Events</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                </td>
+            </tr>
+        </table>
+    </nav>
+
+    <br><br>
+
+    <div class="tool-div">
+        <h1>Progress Tracker</h1>
+        <p>Visualize your learning progress and see how far you've come in each skill area.</p>
+
+        <div class="tool-grid">
+            <div class="tool-card">
+                <h3>Programming Progress</h3>
+                <p>Track completed lessons and projects.</p>
+                <progress value="40" max="100"></progress>
+            </div>
+            <div class="tool-card">
+                <h3>Web Development Progress</h3>
+                <p>Track your journey through HTML, CSS, and JavaScript.</p>
+                <progress value="60" max="100"></progress>
+            </div>
+            <div class="tool-card">
+                <h3>IT Fundamentals Progress</h3>
+                <p>Monitor your understanding of IT concepts.</p>
+                <progress value="30" max="100"></progress>
+            </div>
+        </div>
+
+        <a href="#" class="cta">Update Progress</a>
+    </div>
+
+    <footer>
+        <p>2025 Tech Skills for Beginners</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Checker</title>
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        .tool-div {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .tool-div h1 {
+            margin-bottom: 15px;
+        }
+        .tool-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .tool-card {
+            background-color: #1f1f1f;
+            padding: 25px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .tool-card h3 {
+            margin-bottom: 10px;
+        }
+        .tool-card p {
+            margin-bottom: 15px;
+        }
+        .tool-card input {
+            padding: 8px;
+            width: 60%;
+            border-radius: 5px;
+            border: none;
+            text-align: center;
+        }
+        .cta {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background-color: #dc2f02;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+        .cta:hover {
+            background-color: #ff3b00;
+        }
+    </style>
+</head>
+<body>
+    <nav id="Top">
+        <table>
+            <tr>
+                <td><img src="images/logo.png" alt="logo" width="40" height="40"></td>
+                <td>
+                    <a href="index.html">Home</a>
+                    <a href="learning-hub.html">Learning Hub</a>
+                    <a href="Growth-Tools.html">Self-Assessment & Growth Tools</a>
+                    <a href="success-stories.html">Success Stories</a>
+                    <a href="workshops.html">Workshops & Events</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                </td>
+            </tr>
+        </table>
+    </nav>
+
+    <br><br>
+
+    <div class="tool-div">
+        <h1>Skill Checker</h1>
+        <p>Rate your confidence in each area to understand your current skill level.</p>
+
+        <div class="tool-grid">
+            <div class="tool-card">
+                <h3>Programming</h3>
+                <p>Confidence level (1-10)</p>
+                <input type="number" min="1" max="10">
+            </div>
+            <div class="tool-card">
+                <h3>Web Development</h3>
+                <p>Confidence level (1-10)</p>
+                <input type="number" min="1" max="10">
+            </div>
+            <div class="tool-card">
+                <h3>IT Fundamentals</h3>
+                <p>Confidence level (1-10)</p>
+                <input type="number" min="1" max="10">
+            </div>
+        </div>
+
+        <a href="#" class="cta">Submit</a>
+    </div>
+
+    <footer>
+        <p>2025 Tech Skills for Beginners</p>
+    </footer>
+</body>
+</html>
